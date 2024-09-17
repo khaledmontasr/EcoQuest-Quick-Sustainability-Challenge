@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Heroes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Sustainability Heroes</h1>
+        <p>Select your character:</p>
+        <div id="character-selection">
+            <button onclick="selectCharacter('male')">Male Worker</button>
+            <button onclick="selectCharacter('female')">Female Worker</button>
+        </div>
+
+        <div id="game">
+            <p id="game-instructions"></p>
+            <div id="challenge-container">
+                <p>Drag the waste item to the correct bin:</p>
+                <div id="bins">
+                    <div class="bin" id="bin-paper">Paper</div>
+                    <div class="bin" id="bin-plastic">Plastic</div>
+                    <div class="bin" id="bin-organic">Organic</div>
+                </div>
+                <div id="waste-items">
+                    <div class="waste-item" draggable="true" id="paper">📄 Paper</div>
+                    <div class="waste-item" draggable="true" id="plastic">🛍️ Plastic</div>
+                    <div class="waste-item" draggable="true" id="organic">🍎 Organic</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="score-container">
+            <p id="score-display">Score: 0</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
